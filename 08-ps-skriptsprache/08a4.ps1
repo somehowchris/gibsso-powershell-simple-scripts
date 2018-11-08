@@ -17,7 +17,7 @@ foreach($pr in $proc)
         $red++
     }
 }
- write-host "Red: $red"
- write-host "White: $white"
- write-host "Green: $green"
+ write-host -ForegroundColor red "Red: $red" 
+ write-host -ForegroundColor White "White: $white"
+ write-host -ForegroundColor green "Green: $green"
 
