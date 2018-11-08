@@ -1,0 +1,1 @@
+Add-Content $profile –value "Set-Alias -Name ip -Value ipconfig.exe"

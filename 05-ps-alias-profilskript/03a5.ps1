@@ -1,0 +1,1 @@
+Add-Content $profile –value 'New-PSDrive -Name "MyDocs" -PSProvider "FileSystem" -Root "$env:Userprofile\Documents\"'

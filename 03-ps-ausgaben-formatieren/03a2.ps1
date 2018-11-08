@@ -1,0 +1,1 @@
+get-alias | Select-Object Name, Definition | ConvertTo-Html -Title "Powershell Aliase" > powershell-aliases.html

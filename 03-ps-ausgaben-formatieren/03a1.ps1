@@ -1,0 +1,1 @@
+get-service | Select-Object name, status | Sort-Object -property status | Format-Table -GroupBy status

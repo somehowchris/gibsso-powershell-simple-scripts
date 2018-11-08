@@ -1,0 +1,1 @@
+Remove-Item C:\temp\test.txt

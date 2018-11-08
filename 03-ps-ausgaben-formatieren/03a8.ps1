@@ -1,0 +1,1 @@
+get-command | Select-Object Name, CommandType | Sort-Object Name | Out-GridView

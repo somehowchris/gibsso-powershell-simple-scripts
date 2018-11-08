@@ -1,0 +1,1 @@
+Set-ItemProperty 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Run\' -name "Calc" -Value "calc.exe"

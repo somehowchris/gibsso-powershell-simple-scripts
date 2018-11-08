@@ -1,0 +1,1 @@
+Set-Content -value "Das ist ein Test" C:\temp\test.txt

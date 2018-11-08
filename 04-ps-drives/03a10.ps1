@@ -1,0 +1,1 @@
+Get-ItemPropertyValue 'HKLM:\SOFTWARE\Microsoft\Windows Defender\' -Name "DisableAntiVirus"

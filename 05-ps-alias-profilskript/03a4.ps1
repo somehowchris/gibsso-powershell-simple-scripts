@@ -1,0 +1,1 @@
+Add-Content $profile –value '$Host.PrivateData.ErrorForegroundColor = "Yellow"'

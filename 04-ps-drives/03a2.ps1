@@ -1,0 +1,1 @@
+Get-ChildItem -path env: | Select-Object Value

@@ -1,0 +1,1 @@
+get-service | Where-Object {$_.starttype -eq "manual"} | Export-Csv -Delimiter ";" manual-services.csv

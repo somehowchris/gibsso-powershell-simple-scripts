@@ -1,0 +1,1 @@
+(Get-EventLog -log Application -after $(get-date).date | Measure-Object).count

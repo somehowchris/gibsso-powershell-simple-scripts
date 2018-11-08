@@ -1,0 +1,1 @@
+Get-Alias | Where-Object {$_.ResolvedCommand -like "*-ItemProperty"}
