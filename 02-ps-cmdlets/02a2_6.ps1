@@ -1,0 +1,1 @@
+get-process | Where-Object {$_.CPU -gt "1" -and $_.Path -like "*Programm Files (x86)*"} | Select-Object ProcessName

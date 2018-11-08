@@ -1,0 +1,1 @@
+Get-ItemProperty "C:\tmp\test.txt" | Select-Object Extension

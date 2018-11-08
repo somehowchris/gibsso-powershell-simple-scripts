@@ -1,0 +1,1 @@
+get-hotfix -id K4100403 | Select-Object *

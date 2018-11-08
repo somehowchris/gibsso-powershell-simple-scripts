@@ -1,0 +1,1 @@
+get-Printer | Where-Object {$_.ComputerName -like "*fileprint*"} | Select-Object Name, Status

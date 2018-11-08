@@ -1,0 +1,1 @@
+((get-netipconfiguration -interfacealias LAN-Verbindung).IPV4Adress).ipaddress

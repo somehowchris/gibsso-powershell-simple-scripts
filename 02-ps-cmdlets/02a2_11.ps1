@@ -1,0 +1,1 @@
+Get-ChildItem -Path "P:\" -r | Where-Object {$_.Extension -eq ".jpg" -or $_.Extension -eq "Warning"}

@@ -1,0 +1,1 @@
+Get-Process | Get-Member | Where-Object {$_.Name -like "*64"}

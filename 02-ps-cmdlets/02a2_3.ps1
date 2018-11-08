@@ -1,0 +1,1 @@
+Get-Process | Where-Object {$_.Handels -ge "500"}

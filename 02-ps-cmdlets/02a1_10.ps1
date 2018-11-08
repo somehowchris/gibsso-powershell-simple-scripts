@@ -1,0 +1,1 @@
+get-disk | Select-Object *

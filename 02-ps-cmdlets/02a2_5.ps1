@@ -1,0 +1,1 @@
+Get-Process | Where-Object {$_.CPU -gt "100"} | Select-Object Id, ProcessName, CPU

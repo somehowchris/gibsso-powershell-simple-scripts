@@ -1,0 +1,1 @@
+Get-ItemProperty "c:\temp\test.txt" | Select-Object *
