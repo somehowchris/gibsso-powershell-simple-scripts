@@ -1,8 +1,8 @@
+
 $proc = Get-Process
-$red = 0
 $green = 0
 $white = 0
-
+$red = 0
 foreach($pr in $proc)
 {
     if($pr.cpu -gt 1000)
@@ -17,7 +17,9 @@ foreach($pr in $proc)
         $red++
     }
 }
- write-host -ForegroundColor red "Red: $red" 
- write-host -ForegroundColor White "White: $white"
- write-host -ForegroundColor green "Green: $green"
 
+Write-host ""
+Write-host -ForegroundColor Magenta "Stats:"
+write-host -ForegroundColor Green $green
+write-host -ForegroundColor White $white
+write-host -ForegroundColor Red $red
