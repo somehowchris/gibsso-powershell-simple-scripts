@@ -7,14 +7,14 @@ foreach($pr in $proc)
 {
     if($pr.cpu -gt 1000)
     {
-        write-host -ForegroundColor Green $pr.Id, $pr.Name
-        $green++
+        write-host -ForegroundColor Red $pr.Id, $pr.Name
+        $red++
     }elseif($pr.cpu -ge 300){
         write-host -ForegroundColor White $pr.Id, $pr.Name
         $white++
     }else{
-        write-host -ForegroundColor red $pr.Id, $pr.Name
-        $red++
+        write-host -ForegroundColor Green $pr.Id, $pr.Name
+        $green++
     }
 }
 
