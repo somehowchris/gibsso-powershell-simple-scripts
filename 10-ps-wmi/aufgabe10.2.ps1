@@ -1,15 +1,10 @@
 ﻿
 
-function getDiskSpace(){
+function getRamCapacity(){
     
-    $disks = Get-WmiObject -Class Win32_PhysicalMemory -EA SilentlyContinue | select SerialNumber, Capacity
-    $disksSpace=@{}
-    foreach($disk in $disks){
-         $disksSpace.Add($disk.SerialNumber ,$disk.Capacity/1GB)
+    return ((Get-WmiObject -Class Win32_PhysicalMemory -EA SilentlyContinue ).capacity | Measure-Object -Sum ).sum / 1gb
     }
-    return $disksSpace
-}
 
-$a = getDiskSpace
+$a = getRamCapacity
 
-Write-Host $a.Values
+Write-Host $a

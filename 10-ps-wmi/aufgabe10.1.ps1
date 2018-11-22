@@ -7,9 +7,11 @@ function getDiskSpace(){
     foreach($disk in $disks){
          $disksSpace.Add($disk.DeviceId ,$disk.FreeSpace/1GB)
     }
+    
+
     return $disksSpace
 }
 
 $a = getDiskSpace
 
-Write-Host $a.Values
+Write-Host $a | Format-Table
